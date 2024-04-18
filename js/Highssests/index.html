@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Glide -->
+    <link rel="stylesheet" href="glide/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="glide/@glidejs/glide/dist/css/glide.theme.min.css">
+
+    <!--Lightbox  -->
+    <link rel="stylesheet" href="/lightbox2/dist/css/lightbox.min.css">
+
+    <!-- map -->
+    <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    
+    <!-- logo Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Css Link -->
+    <link rel="stylesheet" href="/style.css"></style>
+    <title>HighKea</title>
+</head>
+<body>
+    <!-- Mobile -->
+    <div id="mobile">
+            <header class="d-flex flex-wrap justify-content-center py-3 border-bottom">
+              <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+                <span class="fs-1 logo">HighKea</span>
+              </a>
+            </header>
+        <main  class="container"  >
+
+            <!-- Glide -->
+              <div class="glide ">
+                <div class="glide__track" data-glide-el="track">
+
+                  <ul class="glide__slides">
+                    <li class="glide__slide"><img style="height: 90vw" src="images/aengsfibbla-cushion-cover-multicolor-dark__1205917_pe907288_s5.jpg"></li>
+                    <li class="glide__slide"><img style="height: 90vw" src="images/baby-children-bc001.jpeg"></li>
+                    <li class="glide__slide"><img style="height: 90vw" src="images/beds-mattresses-bm001.jpeg"></li>
+                    <li class="glide__slide"><img style="height: 90vw" src="images/bullerremsa-rug-high-pile-black-gray-white__1205926_pe907294_s5.jpg"></li>
+                    <li class="glide__slide"><img style="height: 90vw" src="images/decoration-de001.jpeg"></li>
+                    <li class="glide__slide"><img style="height: 90vw" src="images/PH193708.jpg"></li>
+                  </ul>
+
+                  <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                  </div>
+
+                </div>
+              </div>
+           
+            <!-- Chart -->
+            <div>
+              <canvas class="myChart"></canvas>
+            </div>
+
+            <!-- Lightbox3 -->
+            <div class="row">
+              <div class="col-2"></div>
+              <div class="g-5 col-8">
+                <a class="px-2" href="/images/sotenaes-armchair-hakebo-yellow__1262234_pe926999_s5.jpg" data-lightbox="example-set"><img style="height:200px" src="/images/sotenaes-armchair-hakebo-yellow__1262234_pe926999_s5.jpg" alt=""/></a>
+                <a class="px-2" href="/images/PH195696.jpg" data-lightbox="example-set"><img style="height:200px" src="/images/PH195696.jpg" alt="" /></a>
+                <a class="px-2" href="/images/PH195682.jpg" data-lightbox="example-set"><img style="height:200px" src="/images/PH195682.jpg" alt="" /></a>
+                <a class="px-2" href="/images/decoration-de001.jpeg" data-lightbox="example-set"><img style="height:200px" src="/images/decoration-de001.jpeg" alt="" /></a>
+              </div>
+              <div class="col-2"></div>
+            </div>
+            
+             <!-- map-->
+             <div id = "map" class="m-5" style = "width:70vw; height:180px;"></div>
+
+        </main>
+    </div>
+   
+   
+    <!-- Web -->
+    <div id="web">
+        <nav class="py-1 bg-body-tertiary border-bottom">
+            <div class="container d-flex flex-wrap">
+              <ul class="nav me-auto">
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2 active" aria-current="page">Hi</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-1">Amanda,</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-1">How</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-1">Are</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-1">You?</a></li>
+              </ul>
+              <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Login</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Sign up</a></li>
+              </ul>
+            </div>
+          </nav>
+        <header class="py-3 mb-4 border-bottom">
+            <div class="container d-flex flex-wrap justify-content-center">
+              <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+                <span class="fs-4 logo">HighKea</span>
+              </a>
+              <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+              </form>
+            </div>
+        </header>
+        <main >
+            <!-- Glide -->
+              <div class="row py-5">
+                  <div class="col-3"></div>
+                  <div class="glide2 col-6">
+                    <div class="glide__track" data-glide-el="track">
+
+                      <ul class="glide__slides">
+                        <li class="glide__slide  "><img style="height: 500px" src="images/aengsfibbla-cushion-cover-multicolor-dark__1205917_pe907288_s5.jpg"></li>
+                        <li class="glide__slide "><img style="height: 500px" src="images/baby-children-bc001.jpeg"></li>
+                        <li class="glide__slide "><img style="height: 500px" src="images/beds-mattresses-bm001.jpeg"></li>
+                        <li class="glide__slide "><img style="height: 500px" src="images/bullerremsa-rug-high-pile-black-gray-white__1205926_pe907294_s5.jpg"></li>
+                        <li class="glide__slide "><img style="height: 500px" src="images/decoration-de001.jpeg"></li>
+                        <li class="glide__slide "><img style="height: 500px" src="images/PH193708.jpg"></li>
+                      </ul>
+
+                      <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left bg-primary" data-glide-dir="<">
+                          prev
+                        </button>
+                        <button class="glide__arrow glide__arrow--right  bg-primary" data-glide-dir=">">
+                          next
+                        </button>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-3"></div>
+              </div>
+
+            
+
+              <!-- Chart -->
+                <div class=" px-5 py-5 ">
+                  <canvas class="myChart2 px-5 py-5"></canvas>
+                </div>
+
+              <!-- Lightbox3 -->
+                <div class="px-5 py-3 ">
+                    <div class="g-5">
+                      <a class="px-2" href="/images/sotenaes-armchair-hakebo-yellow__1262234_pe926999_s5.jpg" data-lightbox="example-set"><img style="height:200px" src="/images/sotenaes-armchair-hakebo-yellow__1262234_pe926999_s5.jpg" alt=""/></a>
+                      <a class="px-2" href="/images/PH195696.jpg" data-lightbox="example-set"><img style="height:200px" src="/images/PH195696.jpg" alt="" /></a>
+                      <a class="px-2" href="/images/PH195682.jpg" data-lightbox="example-set"><img style="height:200px" src="/images/PH195682.jpg" alt="" /></a>
+                      <a class="px-2" href="/images/decoration-de001.jpeg" data-lightbox="example-set"><img style="height:200px" src="/images/decoration-de001.jpeg" alt="" /></a>
+                    </div>
+                </div>
+
+            
+      
+            <!-- map-->
+             <div id = "map2" class="m-5" style = "width:90vw; height:50vw;"></div>
+                
+           
+             
+        </main>
+    </div>
+   
+    <!-- Glide -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      new Glide('.glide').mount()
+      new Glide('.glide2').mount()
+    </script>
+    
+
+   <!-- Chart -->
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script>
+    var ctx = document.querySelector(".myChart");
+  
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Chair', 'Blanket', 'Bedding', 'BedFrame', 'Side Table', 'Sofa'],
+        datasets: [{
+          label: 'Your Favourites',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 5
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+    </script>
+   <script>
+    var ctx = document.querySelector(".myChart2");
+  
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Chair', 'Blanket', 'Bedding', 'BedFrame', 'Side Table', 'Sofa'],
+        datasets: [{
+          label: 'Your Favourites',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 10
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+
+   <!-- LightBox3 -->
+   <script src="/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+
+   
+ <!-- map -->
+   <script>
+    var mapOptions = {
+       center: [17.385044, 78.486671],
+       zoom: 10
+    }
+    
+    var map = new L.map('map', mapOptions);
+    var map2 = new L.map('map2', mapOptions);
+    
+    var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+    var layer2 = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+    
+    map.addLayer(layer);
+    map2.addLayer(layer2);
+ </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+
+</body>
+</html>
